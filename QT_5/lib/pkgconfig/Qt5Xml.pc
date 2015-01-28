@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Xml
+Description: Qt Xml module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5Xml 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtXml -I${includedir}
+Requires: Qt5Core
+

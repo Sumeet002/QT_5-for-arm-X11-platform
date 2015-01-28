@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Gui
+Description: Qt Gui module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5Gui 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Core -lpthread -lpng -lz -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/QtGui -I${includedir}
+Requires: Qt5Core
+

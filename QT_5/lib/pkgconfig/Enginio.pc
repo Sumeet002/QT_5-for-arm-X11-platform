@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Enginio
+Description: Enginio module
+Version: 1.0.6
+Libs: -L${libdir} -lEnginio 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Network -lQt5Gui -lQt5Core -lpthread -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/Enginio -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Network
+

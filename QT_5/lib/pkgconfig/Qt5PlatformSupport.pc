@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 PlatformSupport
+Description: Qt PlatformSupport module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5PlatformSupport 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -lfontconfig -lfreetype -L/usr/local/QT_5/lib -lQt5Gui -lQt5Core -lpthread -pthread -lgthread-2.0 -lrt -lglib-2.0 -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/QtPlatformSupport -I${includedir}
+Requires: Qt5Core Qt5Gui
+

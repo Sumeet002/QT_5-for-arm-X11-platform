@@ -1,0 +1,15 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config fontconfig evdev xlib xrender xcb-plugin xcb-qt xcb-sm xkbcommon-qt linuxfb c++11 accessibility egl eglfs openvg opengl opengles2 shared qpa reduce_exports clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd system-jpeg system-png png system-freetype no-harfbuzz system-zlib nis iconv glib openssl xcb rpath alsa concurrent audio-backend release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -lpthread -lz -lm -ldl -pthread -lgthread-2.0 -lrt -lglib-2.0  
+Cflags: -I${includedir}/QtCore -I${includedir}
+

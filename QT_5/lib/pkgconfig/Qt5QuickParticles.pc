@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QuickParticles
+Description: Qt QuickParticles module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5QuickParticles 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Quick -L/usr/local/QT_5/lib -lQt5Qml -lQt5Network -lQt5Gui -lQt5Core -lpthread -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/QtQuickParticles -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt5Quick
+

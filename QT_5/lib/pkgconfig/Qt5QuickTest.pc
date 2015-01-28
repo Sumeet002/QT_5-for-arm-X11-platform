@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QuickTest
+Description: Qt QuickTest module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5QuickTest 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Widgets -lQt5Gui -lQt5Core -lpthread -L/usr/local/QT_5/lib -lQt5Quick -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Qml -lQt5Network -lQt5Gui -lQt5Test -lQt5Core -lpthread -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/QtQuickTest -I${includedir}
+Requires: Qt5Core Qt5Widgets
+

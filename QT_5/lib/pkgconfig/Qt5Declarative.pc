@@ -1,0 +1,14 @@
+prefix=/usr/local/QT_5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Declarative
+Description: Qt Declarative module
+Version: 5.3.2
+Libs: -L${libdir} -lQt5Declarative 
+Libs.private: -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5XmlPatterns -L/usr/local/QT_5/lib -lQt5Widgets -lQt5Network -lQt5Sql -L/usr/local/QT_5/lib -lQt5Script -lQt5Gui -lQt5Core -lpthread -lrt -lQt5XmlPatterns -L/home/sumeet/y/ltib/rootfs/usr/lib -L/usr/local/QT_5/lib -lQt5Network -lQt5Core -lpthread -lGLESv2 -lEGL -lGAL  
+Cflags: -I${includedir}/QtDeclarative -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets Qt5Script
+
